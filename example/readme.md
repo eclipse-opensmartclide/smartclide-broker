@@ -12,7 +12,7 @@ Additional Maven dependencies (defined in pom.xml):
 - Jackson for handling JSON serialization/deserialization
 - Spring for RabbitMQ (spring-boot-starter-amqp)
 
-Before running the application, you need to install RabbitMQ server. The latest release of RabbitMQ is 3.8.9.
+Before running the application, you need to install RabbitMQ server. The latest release of RabbitMQ is 3.8.14.
 
 Depending on your OS, follow the installation guide here: https://www.rabbitmq.com/download.html
 
@@ -33,7 +33,7 @@ sudo systemctl start rabbitmq-server
 ### Windows
 
 You can use the installed RabbitMQ Command Prompt or open a terminal
-as administrator and change directory to C:\Program Files\RabbitMQ Server\rabbitmq_server-3.8.9\sbin
+as administrator and change directory to C:\Program Files\RabbitMQ Server\rabbitmq_server-3.8.14\sbin
 
 ```bash
 # check status
@@ -59,7 +59,7 @@ sudo rabbitmq-plugins enable rabbitmq_management
 ### Windows
 
 You can use the installed RabbitMQ Command Prompt or open a terminal
-as administrator and change directory to C:\Program Files\RabbitMQ Server\rabbitmq_server-3.8.9\sbin
+as administrator and change directory to C:\Program Files\RabbitMQ Server\rabbitmq_server-3.8.14\sbin
 
 ```bash
 rabbitmq-plugins enable rabbitmq_management
