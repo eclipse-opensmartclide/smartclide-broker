@@ -1,20 +1,22 @@
-package com.theo.jwt.controller;
+package com.theo.jwt_rabbitmq.controller;
 
-import com.theo.jwt.model.JwtRequest;
-import com.theo.jwt.model.JwtResponse;
-import com.theo.jwt.service.UserService;
-import com.theo.jwt.utility.JWTUtility;
+import com.theo.jwt_rabbitmq.model.JwtRequest;
+import com.theo.jwt_rabbitmq.model.JwtResponse;
+import com.theo.jwt_rabbitmq.service.UserService;
+import com.theo.jwt_rabbitmq.utility.JWTUtility;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HomeController {
+
     @Autowired
     private JWTUtility jwtUtility;
 
@@ -39,8 +41,8 @@ public class HomeController {
         try {
             authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(
-                    jwtRequest.getUsername(),
-                    jwtRequest.getPassword()
+                            jwtRequest.getUsername(),
+                            jwtRequest.getPassword()
                     )
             );
         } catch (BadCredentialsException e) {

@@ -1,5 +1,6 @@
-package com.theo.jwt.service;
+package com.theo.jwt_rabbitmq.service;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -10,12 +11,16 @@ import java.util.ArrayList;
 
 @Service
 public class UserService implements UserDetailsService {
+    @Value("${jwt.user}")
+    private  String username;
+    @Value("${jwt.pass}")
+    private String pass;
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
         // Logic to load user from database
 
         // For now just create a dummy object and return it
         // Convert our user to User model of Spring Security
-        return new User("smartClide","somepass",new ArrayList<>());
+        return new User(userName,pass,new ArrayList<>());
     }
 }

@@ -1,11 +1,9 @@
-package com.theo.jwt.filter;
+package com.theo.jwt_rabbitmq.filter;
 
-
-import com.theo.jwt.service.UserService;
-import com.theo.jwt.utility.JWTUtility;
+import com.theo.jwt_rabbitmq.service.UserService;
+import com.theo.jwt_rabbitmq.utility.JWTUtility;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;

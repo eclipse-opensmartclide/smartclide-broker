@@ -1,5 +1,4 @@
-server:
-  port: 8083
-
 jwt:
   secret: my_secret_key
+  user: smartClide
+  pass: somepass
