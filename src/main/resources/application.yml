@@ -1,8 +1,0 @@
-#spring:
-#  rabbitmq:
-#    username: smartClide
-#    password: $2314axz!
-#jwt:
-#  secret: my_secret_key
-#  user: SmartCLIDE
-#  pass: $2314axz!
