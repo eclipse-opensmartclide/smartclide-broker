@@ -21,12 +21,12 @@ public class WebSocketConfiguration implements WebSocketMessageBrokerConfigurer 
 
         // Set prefixes for the endpoint that the client listens for our messages from
         registry.enableStompBrokerRelay("/topic")
-                .setRelayHost("rabbitmq_stomp") // .setRelayHost("localhost")
+                .setRelayHost("localhost") // .setRelayHost("rabbitmq_stomp")
                 .setRelayPort(61613)
                 .setClientLogin("guest")
                 .setClientPasscode("guest");
         // Set prefix for endpoints the client will send messages to
-        registry.setApplicationDestinationPrefixes("/app");
+        registry.setApplicationDestinationPrefixes("/broker");
 
     }
 }
