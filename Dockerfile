@@ -1,4 +1,4 @@
-FROM openjdk:11.0.12-jdk-oracle
-COPY target/spring-websocket-0.0.1-SNAPSHOT.jar spring-websocket-0.0.1-SNAPSHOT.jar
+FROM adoptopenjdk:11-jre-hotspot
+ADD target/*.jar app.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/spring-websocket-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","/app.jar"]
