@@ -1,0 +1,21 @@
+eu:
+  smartclide:
+    broker:
+      host: localhost
+      port: 5672
+      stomp-port: 61613
+      username: guest
+      password: guest
+      allowed-origins:
+        - "*"
+spring:
+  rabbitmq:
+    host: ${eu.smartclide.broker.host}
+    port: ${eu.smartclide.broker.port}
+    username: ${eu.smartclide.broker.username}
+    password: ${eu.smartclide.broker.password}
+logging:
+  level:
+    com:
+      example:
+        websocket: debug
