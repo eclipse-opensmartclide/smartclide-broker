@@ -46,7 +46,9 @@ public class WebSocketConfiguration implements WebSocketMessageBrokerConfigurer 
                 .setRelayHost(messageBrokerConfig.getHost())
                 .setRelayPort(messageBrokerConfig.getStompPort())
                 .setClientLogin(messageBrokerConfig.getUsername())
-                .setClientPasscode(messageBrokerConfig.getPassword());
+                .setClientPasscode(messageBrokerConfig.getPassword())
+                .setSystemLogin(messageBrokerConfig.getUsername())
+                .setSystemPasscode(messageBrokerConfig.getPassword());
 
         // create the exchange on rabbitmq if it does not exist yet
         log.info("Creating topic exchange \"{}\"", MessageBrokerConfig.EXCHANGE_NAME);
