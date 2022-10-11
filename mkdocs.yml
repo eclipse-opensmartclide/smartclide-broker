@@ -1,5 +1,5 @@
 site_name: SmartCLIDE MOM Component
-repo_url: https://github.com/eclipse-researchlabs/smartclide-broker
+repo_url: https://github.com/eclipse-opensmartclide/smartclide-broker
 
 nav:
   - MOM: 'index.md'
