@@ -11,7 +11,7 @@
  * Contributors:
  *     theioakiti - initial API and implementation
  *******************************************************************************/
-package com.example.websocket;
+package org.eclipse.opensmartclide.mom.websocket;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

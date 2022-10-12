@@ -11,10 +11,11 @@
  * Contributors:
  *     theioakiti - initial API and implementation
  *******************************************************************************/
-package com.example.websocket.rest;
+package org.eclipse.opensmartclide.mom.websocket.rest;
 
-import com.example.websocket.config.MessageBrokerConfig;
 import lombok.extern.slf4j.Slf4j;
+
+import org.eclipse.opensmartclide.mom.websocket.config.MessageBrokerConfig;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;

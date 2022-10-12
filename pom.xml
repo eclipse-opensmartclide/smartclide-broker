@@ -24,12 +24,15 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.example</groupId>
-    <artifactId>spring-websocket</artifactId>
+    <groupId>org.eclipse.opensmartclide</groupId>
+    
+    <artifactId>mom</artifactId>
+    
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>spring-websocket</name>
-    <description>Demo project for Spring Boot</description>
+    <name>eclipse-opensmartclide-mom</name>
+    
+    <description>The MoM module of the OpenSmartCLIDE project.</description>
 
     <properties>
         <java.version>11</java.version>
@@ -40,14 +43,17 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-websocket</artifactId>
         </dependency>
+        
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-reactor-netty</artifactId>
         </dependency>
+        
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
+        
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
