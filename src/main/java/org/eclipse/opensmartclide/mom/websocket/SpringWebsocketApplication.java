@@ -11,16 +11,15 @@
  * Contributors:
  *     theioakiti - initial API and implementation
  *******************************************************************************/
-package com.example.websocket;
+package org.eclipse.opensmartclide.mom.websocket;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootTest
-class SpringWebsocketApplicationTests {
+@SpringBootApplication
+public class SpringWebsocketApplication {
 
-    @Test
-    void contextLoads() {
+    public static void main(String[] args) {
+        SpringApplication.run(SpringWebsocketApplication.class, args);
     }
-
 }

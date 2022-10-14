@@ -11,7 +11,7 @@
  * Contributors:
  *     theioakiti - initial API and implementation
  *******************************************************************************/
-package com.example.websocket.config;
+package org.eclipse.opensmartclide.mom.websocket.config;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.AmqpAdmin;
